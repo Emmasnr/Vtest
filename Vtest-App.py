@@ -9,15 +9,15 @@ class GitApp(GridLayout):
     def __init__(self, **kwargs):
         super(GitApp, self).__init__()
         self.cols = 2
-        self.add_widget(Label(text='Employee Name'))
+        self.add_widget(Label(text='Student Name'))
         self.e_name = TextInput()
         self.add_widget(self.e_name)
         
-        self.add_widget(Label(text='Employee Role'))
+        self.add_widget(Label(text='Student Role'))
         self.e_role = TextInput()
         self.add_widget(self.e_role)
         
-        self.add_widget(Label(text='Employee Gender'))
+        self.add_widget(Label(text='Student Gender'))
         self.e_gender = TextInput()
         self.add_widget(self.e_gender)
         
@@ -26,9 +26,9 @@ class GitApp(GridLayout):
         self.add_widget(self.press)
         
     def click_here(self, instance):
-        print("Name of Employee is "+self.e_name.text)
-        print("Role of Employee is "+self.e_role.text)
-        print("Gender of Employee is "+self.e_gender.text)
+        print("Name of Student is "+self.e_name.text)
+        print("Role of Student is "+self.e_role.text)
+        print("Gender of Student is "+self.e_gender.text)
         print("")
         
         
